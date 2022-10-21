@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/favicon-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2da7ac124d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+<body onscroll="loadfn()">
+    <header>
+        <nav>
+            <img id="logo" src="img/panaderia-pedrin-logo-recortada-sinFondo.png" alt="Logo panaderia pedrin"
+                height="150px" width="150px">
+            <img id="logo2" src="img/panaderia-pedrin-logo-ByN-recortada-SinFondo.png" alt="Logo panaderia pedrin"
+                height="150px" width="150px">
+            <div id="menuDer">
+                <ul>
+                    <li><a class="EnlaceBarraBusqueda" href="#">Inicio</a></li>
+                    <li><a class="EnlaceBarraBusqueda" href="#">Productos</a></li>
+                    <li><a class="EnlaceBarraBusqueda" href="#">Pedidos especiales</a></li>
+                    <li><a class="EnlaceBarraBusqueda" href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+                    <li><a class="EnlaceBarraBusqueda" href="#"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="container">
+        <h1>Panadería Pedrín</h1>
+        <h3 id="eslogan">El mejor pan artesano hecho con masa madre</h3>
+    </div>
+    <div id="container2">
+        <h3 class="marron">Qué nos diferencia</h3>
+        <div id="barraSeparadora"></div>
+    </div>
+    <div class="menuCentral">
+        <div id="panHechoConAutenticaMasaMadre">
+            <h1 class="h1_icono"><i class="fa-solid fa-bread-slice marron icono"></i></h1>
+            <h3 class="marron">Pan hecho con auténtica masa madre</h3>
+            <p class="texto_icono marron">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptas harum explicabo? Mollitia,
+                alias nisi? Ipsa aut vitae exercitationem totam voluptatem possimus laborum, dolor, voluptas reiciendis
+                debitis quaerat libero sunt quas odit repellat quidem. Iusto, harum. Perspiciatis facere dolores
+                reprehenderit similique illum natus ad eius quia. Animi ullam explicabo facere fugit ex, expedita
+                corporis cupiditate modi. Accusantium excepturi, impedit dignissimos expedita beatae reprehenderit
+                libero praesentium unde tempore corporis dolorum voluptate quo error quam obcaecati aliquam modi hic
+                quaerat perferendis. Facilis ex repellendus adipisci illo voluptate, quisquam dolores architecto
+                incidunt quaerat atque eveniet iusto esse corrupti dolorum consequuntur minima eligendi natus.
+            </p>
+        </div>
+        <div id="enviosInmediatosEnMenosDe24h">
+            <h1 class="h1_icono"><i class="fa-solid fa-car marron icono"></i></i></h1>
+            <h3 class="marron">Pan hecho con auténtica masa madre</h3>
+            <p class="texto_icono marron">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptas harum explicabo? Mollitia,
+                alias nisi? Ipsa aut vitae exercitationem totam voluptatem possimus laborum, dolor, voluptas reiciendis
+                debitis quaerat libero sunt quas odit repellat quidem. Iusto, harum. Perspiciatis facere dolores
+                reprehenderit similique illum natus ad eius quia. Animi ullam explicabo facere fugit ex, expedita
+                corporis cupiditate modi. Accusantium excepturi, impedit dignissimos expedita beatae reprehenderit
+                libero praesentium unde tempore corporis dolorum voluptate quo error quam obcaecati aliquam modi hic
+                quaerat perferendis. Facilis ex repellendus adipisci illo voluptate, quisquam dolores architecto
+                incidunt quaerat atque eveniet iusto esse corrupti dolorum consequuntur minima eligendi natus.
+            </p>
+        </div>
+        <div id="elMejorPrecioGarantizado">
+            <h1 class="h1_icono"><i class="fa-solid fa-euro-sign marron icono"></i></h1>
+            <h3 class="marron">Pan hecho con auténtica masa madre</h3>
+            <p class="texto_icono marron">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptas harum explicabo? Mollitia,
+                alias nisi? Ipsa aut vitae exercitationem totam voluptatem possimus laborum, dolor, voluptas reiciendis
+                debitis quaerat libero sunt quas odit repellat quidem. Iusto, harum. Perspiciatis facere dolores
+                reprehenderit similique illum natus ad eius quia. Animi ullam explicabo facere fugit ex, expedita
+                corporis cupiditate modi. Accusantium excepturi, impedit dignissimos expedita beatae reprehenderit
+                libero praesentium unde tempore corporis dolorum voluptate quo error quam obcaecati aliquam modi hic
+                quaerat perferendis. Facilis ex repellendus adipisci illo voluptate, quisquam dolores architecto
+                incidunt quaerat atque eveniet iusto esse corrupti dolorum consequuntur minima eligendi natus.
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const loadfn = () => {
+            const _nav = document.querySelector('nav').style;
+            const _logo = document.getElementById('logo')
+            const _logo2 = document.getElementById("logo2")
+            const enlaces = document.getElementsByClassName("EnlaceBarraBusqueda")
+            if (window.scrollY > 10) {
+                _nav.backgroundColor = "#40342C";
+                _nav.boxShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)';
+                _logo.style.display = 'none'
+                _logo2.style.display = 'block'
+                for (var i = 0; i < enlaces.length; i++) {
+                    enlaces[i].classList.add('blanco')
+                    enlaces[i].classList.remove('negro')
+                }
+            } else {
+                _nav.backgroundColor = '#CAA58B';
+                _nav.boxShadow = 'none';
+                _logo.style.display = 'block'
+                _logo2.style.display = 'none'
+                for (var i = 0; i < enlaces.length; i++) {
+                    enlaces[i].classList.add('negro')
+                    enlaces[i].classList.remove('blanco')
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
