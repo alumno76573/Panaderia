@@ -1,0 +1,150 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Panaderia/img/panesFondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    margin-top: 7.7rem;
+    width: 100vw;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.marron{
+    color: #40342C;
+}
+#container > h1{
+    font-size: 4rem;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#eslogan{
+    font-size: 2rem;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #CAA58B;
+    width: 100vw;
+}
+#barraSeparadora{
+    border: solid 1px #40342C;
+    width: 150px;
+}
+.menuCentral{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding-top: 50px;
+    background-color: #CAA58B;
+    width: 100vw;
+}
+.publicaciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icono{
+    color:#402919;;
+    padding: 1rem;
+    font-size: 7rem;
+}
+.h1_icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid 2px #40342C;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+}
+.texto_icono{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.h3{
+    text-align: center;
+    margin-top: 3rem;
+}
+.resenas{
+    display: flex;
+    margin: 0;
+    padding: 0 0 1rem 0;
+    background-color: #CAA58B;
+    width: 100vw;
+    justify-content: center;
+}
+fieldset{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+    border: solid 2px black;
+}
+legend{
+    font-size: xx-large;
+}
+#resena{
+    width: 33%;
+    background-color: #402919;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    border: solid 1px white;
+    border-radius: 2rem;
+}
+.usuario_resena{
+    display: flex;
+}
+.circulo{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem 0 1rem;
+}
+h3{
+    margin-left: 1rem;
+}
+.icono_resena{
+    color: white;
+}
+.interior_resena{
+    margin: 5px 0 0 1rem;
+}
+.comentario_resena{
+    margin: 5px 0 1rem 3rem;
+}
+.boton_resenas{
+    height: 5rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color: #BF7B4B;
+    font-size: larger;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.boton_resenas:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #8C5A37;
+    color: white;
+}

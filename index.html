@@ -7,26 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="img/favicon-removebg-preview.png">
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2da7ac124d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Ubuntu&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="css/estiloComun.css">
+    <link rel="stylesheet" href="css/style.css">
 <body onscroll="loadfn()">
     <header>
         <nav>
-            <img id="logo" src="img/panaderia-pedrin-logo-recortada-sinFondo.png" alt="Logo panaderia pedrin"
-                height="150px" width="150px">
-            <img id="logo2" src="img/panaderia-pedrin-logo-ByN-recortada-SinFondo.png" alt="Logo panaderia pedrin"
-                height="150px" width="150px">
+            <img id="logo" src="img/_logo_.png" alt="Logo panaderia pedrin"
+                height="100px" width="100px">
+            <img id="logo2" src="img/_logo_ByN.png" alt="Logo panaderia pedrin"
+                height="100px" width="100px">
             <div id="menuDer">
                 <ul>
                     <li><a class="EnlaceBarraBusqueda" href="#">Inicio</a></li>
                     <li><a class="EnlaceBarraBusqueda" href="#">Productos</a></li>
                     <li><a class="EnlaceBarraBusqueda" href="#">Pedidos especiales</a></li>
-                    <li><a class="EnlaceBarraBusqueda" href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+                    <li><button class="botonEnlaceBarraBusqueda"><i class="fa-solid fa-basket-shopping carrito"></i></button><div class="compra"></div></li>
                     <li><a class="EnlaceBarraBusqueda" href="#"><i class="fa-solid fa-user"></i></a></li>
                 </ul>
             </div>
@@ -41,9 +41,9 @@
         <div id="barraSeparadora"></div>
     </div>
     <div class="menuCentral">
-        <div id="panHechoConAutenticaMasaMadre">
+        <div class="publicaciones" id="panHechoConAutenticaMasaMadre">
             <h1 class="h1_icono"><i class="fa-solid fa-bread-slice marron icono"></i></h1>
-            <h3 class="marron">Pan hecho con auténtica masa madre</h3>
+            <h3 class="marron h3">Pan hecho con auténtica masa madre</h3>
             <p class="texto_icono marron">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptas harum explicabo? Mollitia,
                 alias nisi? Ipsa aut vitae exercitationem totam voluptatem possimus laborum, dolor, voluptas reiciendis
@@ -55,9 +55,9 @@
                 incidunt quaerat atque eveniet iusto esse corrupti dolorum consequuntur minima eligendi natus.
             </p>
         </div>
-        <div id="enviosInmediatosEnMenosDe24h">
+        <div class="publicaciones" id="enviosInmediatosEnMenosDe24h">
             <h1 class="h1_icono"><i class="fa-solid fa-car marron icono"></i></i></h1>
-            <h3 class="marron">inmediatos en menos de 24h</h3>
+            <h3 class="marron h3">Inmediatos en menos de 24h</h3>
             <p class="texto_icono marron">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptas harum explicabo? Mollitia,
                 alias nisi? Ipsa aut vitae exercitationem totam voluptatem possimus laborum, dolor, voluptas reiciendis
@@ -69,9 +69,9 @@
                 incidunt quaerat atque eveniet iusto esse corrupti dolorum consequuntur minima eligendi natus.
             </p>
         </div>
-        <div id="elMejorPrecioGarantizado">
+        <div class="publicaciones" id="elMejorPrecioGarantizado">
             <h1 class="h1_icono"><i class="fa-solid fa-euro-sign marron icono"></i></h1>
-            <h3 class="marron">El mejor precio garantizado</h3>
+            <h3 class="marron h3">El mejor precio garantizado</h3>
             <p class="texto_icono marron">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptas harum explicabo? Mollitia,
                 alias nisi? Ipsa aut vitae exercitationem totam voluptatem possimus laborum, dolor, voluptas reiciendis
@@ -84,17 +84,89 @@
             </p>
         </div>
     </div>
+    
+    <div class="resenas">
+        <fieldset>
+            <legend>Reseñas</legend>
+            <div id="resena">
+                <h2 class="usuario_resena"><div class="circulo"><i class="fa-solid fa-user icono_resena"></i></div>Marta Sánchez</h2>
+                <h3 class="interior_resena">Valoración: <i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i></h3>
+                <h3 class="interior_resena">Comentario:</h3>
+                <h4 class="comentario_resena">Me encantan su pan de molde sin glúten</h4>
+            </div>
+            <div id="resena">
+                <h2 class="usuario_resena"><div class="circulo"><i class="fa-solid fa-user icono_resena"></i></div>Ramiro Pérez</h2>
+                <h3 class="interior_resena">Valoración: <i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i></h3>
+                <h3 class="interior_resena">Comentario:</h3>
+                <h4 class="comentario_resena">Muy bueno y muy barato</h4>
+            </div>
+            <div id="resena">
+                <h2 class="usuario_resena"><div class="circulo"><i class="fa-solid fa-user icono_resena"></i></div>Pablo Gómez</h2>
+                <h3 class="interior_resena">Valoración: <i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i></h3>
+                <h3 class="interior_resena">Comentario:</h3>
+                <h4 class="comentario_resena">Pedí el pan a domicilio y aún estaba caliente</h4>
+            </div>
+            <div id="resena">
+                <h2 class="usuario_resena"><div class="circulo"><i class="fa-solid fa-user icono_resena"></i></div>Daniel Recas</h2>
+                <h3 class="interior_resena">Valoración: <i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i></h3>
+                <h3 class="interior_resena">Comentario:</h3>
+                <h4 class="comentario_resena">Muy rápido el servicio y muy fácil pedir online</h4>
+            </div>
+            <div id="resena">
+                <h2 class="usuario_resena"><div class="circulo"><i class="fa-solid fa-user icono_resena"></i></div>Alba González</h2>
+                <h3 class="interior_resena">Valoración: <i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i></h3>
+                <h3 class="interior_resena">Comentario:</h3>
+                <h4 class="comentario_resena">Servicio domicilio muy bueno. Te llaman antes de llevarlo a casa. Roscón muy bueno.</h4>
+            </div>
+            <div id="resena">
+                <h2 class="usuario_resena"><div class="circulo"><i class="fa-solid fa-user icono_resena"></i></div>Paula Pascal</h2>
+                <h3 class="interior_resena">Valoración: <i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i><i class="fa-solid fa-wheat-awn"></i></h3>
+                <h3 class="interior_resena">Comentario:</h3>
+                <h4 class="comentario_resena">La mejor opción para comprar pan fresco y delicioso</h4>
+            </div>
+            <button class="boton_resenas" type="submit">Mostrar mas reseñas</button>
+        </fieldset>
+    </div>
+    <footer>
+        <div class="info_footer">
+            <h3 class="contenido_footer">Informacíon</h3>
+            <ul>
+                <li><a href="#" class="blanco">¿Quiénes somos?</a></li>
+                <li><a href="#" class="blanco">Política de privacidad</a></li>
+                <li><a href="#" class="blanco">Política de cookies</a></li>
+                <li><a href="#" class="blanco">Condiciones legales</a></li>
+            </ul>
+        </div>
+        <div class="barra"></div>
+        <div class="info_footer">
+            <h3 class="contenido_footer">Haz tu pedido por teléfono</h3>
+            <h2 class="contenido_footer">625 832 321</h2>
+            <p class="contenido_footer">Horario de lunes a viernes de 8:00 a 21:00</p>
+        </div>
+        <div class="barra"></div>
+        <div class="info_footer">
+            <h3 class="contenido_footer">Síguenos en redes sociales</h3>
+            <div class="redes_sociales">
+                <a href="#"><i class="fa-brands fa-instagram icono_redsocial"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook icono_redsocial"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp icono_redsocial"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube icono_redsocial"></i></a>
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript">
         const loadfn = () => {
             const _nav = document.querySelector('nav').style;
             const _logo = document.getElementById('logo')
             const _logo2 = document.getElementById("logo2")
             const enlaces = document.getElementsByClassName("EnlaceBarraBusqueda")
+            const carrito=document.getElementsByClassName("carrito")[0]
             if (window.scrollY > 10) {
                 _nav.backgroundColor = "#40342C";
                 _nav.boxShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)';
                 _logo.style.display = 'none'
                 _logo2.style.display = 'block'
+                carrito.classList.add('blanco');
                 for (var i = 0; i < enlaces.length; i++) {
                     enlaces[i].classList.add('blanco')
                     enlaces[i].classList.remove('negro')
@@ -104,6 +176,7 @@
                 _nav.boxShadow = 'none';
                 _logo.style.display = 'block'
                 _logo2.style.display = 'none'
+                carrito.classList.remove('blanco')
                 for (var i = 0; i < enlaces.length; i++) {
                     enlaces[i].classList.add('negro')
                     enlaces[i].classList.remove('blanco')

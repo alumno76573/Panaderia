@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+#logo{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#logo2{
+    display: none;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: #CAA58B;
+}
+ul li{
+    display: inline;
+}
+.EnlaceBarraBusqueda{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-size: x-large;
+    transition: 0.2s;
+}
+.EnlaceBarraBusqueda:hover{
+    font-size: 2rem;
+}
+.botonEnlaceBarraBusqueda{
+    background-color: transparent;
+    border: none;
+}
+.carrito{
+    transition: 0.2s;
+}
+.carrito:hover{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.carrito{
+    font-size: x-large;
+}
+#menuDer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.compra{
+    display: none;
+    background-color: white;
+    right: 0;
+    position: fixed;
+    width: 300px;
+    height: 500px;
+    margin-top: 4rem;
+}
+.botonEnlaceBarraBusqueda:focus + .compra{
+    display: block;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #40342C;
+    width: 100vw;
+}
+.info_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+footer > div > ul{
+    display: flex;
+    flex-direction: column;
+}
+.barra{
+    border: solid 1px #6e5a4c;
+    height: 100px;
+    margin-top: 2rem;
+}
+.contenido_footer{
+    color: white;
+}
+.icono_redsocial{
+    color: white;
+    font-size: xx-large;
+    padding: 1rem;
+}
+.blanco{
+    color: white;
+}
+.negro{
+    color: black;
+}
