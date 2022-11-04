@@ -1,6 +1,4 @@
 body{
-    margin: 0;
-    padding: 0;
     font-family: 'Ubuntu', sans-serif;
 }
 #logo2{
@@ -68,6 +66,7 @@ ul li{
     padding-top: 12rem;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .imagen_producto{
     width: 70%;
@@ -78,9 +77,10 @@ ul li{
     display: flex;  
     align-items: center;
     flex-direction: column;
-    width: 25%;
+    width: 30%;
     color: white;
     padding-top: 1rem;
+    margin-bottom: 1rem;
 }
 .fotter_tarjeta{
     display: flex;
