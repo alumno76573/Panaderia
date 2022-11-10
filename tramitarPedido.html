@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tramitar Pedido</title>
+    <link rel="shortcut icon" href="img/favicon-removebg-preview.png">
+    <script src="https://kit.fontawesome.com/2da7ac124d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/estiloComun.css">
+    <link rel="stylesheet" href="css/estilosTramitar.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="img/_logo_.png" alt="Logo panaderia pedrin" height="100px" width="100px">
+            <img id="logo2" src="img/_logo_ByN.png" alt="Logo panaderia pedrin" height="100px" width="100px">
+            <div id="menuDer">
+                <ul>
+                    <li><a class="EnlaceBarraBusqueda" href="index.html">Inicio</a></li>
+                    <li><a class="EnlaceBarraBusqueda" href="productos.html">Productos</a></li>
+                    <li><a class="EnlaceBarraBusqueda" href="#">Pedidos especiales</a></li>
+                    <li>
+                        <button class="botonEnlaceBarraBusqueda" onclick="abrir_compra()"><i
+                                class="fa-solid fa-basket-shopping carrito"></i></button>
+                        <div class="compra">
+                            <h3>Mi carrito</h3>
+                            <div class="separador"></div>
+                            <div class="item_carro">
+                                <img src="img/NAPOLITANAS-DE-CHOCOLATE.jpg" alt="napolitanas de chocolate" width="70rem"
+                                    height="70rem">
+                                <div class="info_item_carro">
+                                    <h5 class="separar">Napolitana chocolate</h5>
+                                    <h5 class="separar">Cantidad 2</h5>
+                                    <h5 class="separar">9,98€</h5>
+                                </div>
+                            </div>
+                            <div class="separador"></div>
+                            <div class="item_carro">
+                                <img src="img/Bollos-prenaos.png" alt="bollos prenaos" width="70rem" height="70rem">
+                                <div class="info_item_carro">
+                                    <h5 class="separar">Bollos preñaos</h5>
+                                    <h5 class="separar">Cantidad 5</h5>
+                                    <h5 class="separar">7,00€</h5>
+                                </div>
+                            </div>
+                            <div class="separador"></div>
+                            <div class="item_carro">
+                                <img src="img/pan-de-centeno.jpg" alt="Pan de centeno" width="70rem" height="70rem">
+                                <div class="info_item_carro">
+                                    <h2 class="separar">Pan de centeno</h2>
+                                    <h2 class="separar">Cantidad 1</h2>
+                                    <h2 class="separar">5,50€</h2>
+                                </div>
+                            </div>
+                            <div class="tramitar_pedido">
+                                <a href="tramitarPedido.html" class="btn_tramitar_pedido">Tramitar Pedido</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="EnlaceBarraBusqueda" href="#"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="items">
+            <div class="item_carro">
+                <img src="img/NAPOLITANAS-DE-CHOCOLATE.jpg" alt="napolitanas de chocolate" width="300rem"
+                    height="300rem">
+                <div class="info_item_carro">
+                    <h5 class="separar">Napolitanas de chocolate</h5>
+                    <h4 class="descripcion">Bollo de origen italiano relleno de chocolate, con una capa de hojaldre que
+                        la cubre,
+                        un huevo batido, almibar y unas virutas de chocolate por encima</h4>
+                    <h5 class="separar">Cantidad: <input type="number" name="cantidad" id="cantidad" value="2"></h5>
+                    <h5 class="separar">5,50€</h5>
+                </div>
+                <p><i class="fa-solid fa-xmark"></i></p>
+            </div>
+            <div class="item_carro">
+                <img src="img/Bollos-prenaos.png" alt="bollos prenaos" width="300rem" height="300rem">
+                <div class="info_item_carro">
+                    <h5 class="separar">Bollos Preñaos</h5>
+                    <h4 class="descripcion"> Los bollos preñaos con unos de los tentempiés más deliciosos que podemos
+                        encontrar en Asturias. Se trata
+                        de un bollo de pan relleno de chorizo.</h4>
+                    <h5 class="separar">Cantidad: <input type="number" name="cantidad" id="cantidad" value="5"></h5>
+                    <h5 class="separar">7,00€</h5>
+                </div>
+                <p><i class="fa-solid fa-xmark"></i></p>
+            </div>
+            <div class="item_carro">
+                <img src="img/pan-de-centeno.jpg" alt="pan de centeno" width="300rem" height="300rem">
+                <div class="info_item_carro">
+                    <h5 class="separar">Pan de centeno</h5>
+                    <h4 class="descripcion">Tiene una apariencia más compacta porque su cereal tiene menos gluten
+                        que el de otros tipos y su sabor es ligeramente amargo.</h4>
+                    <h5 class="separar">Cantidad: <input type="number" name="cantidad" id="cantidad" value="1"></h5>
+                    <h5 class="separar">5,50€</h5>
+                </div>
+                <p><i class="fa-solid fa-xmark"></i></p>
+            </div>
+        </div>
+        <form action="#" method="post">
+            <div class="facturacion">
+                <fieldset class="dir_fac">
+                    <legend class="size_legend">Dirección de facturación</legend>
+                    <p>Nombre:<input type="text" name="nombre" id="nombre"></p>
+                    <p>Teléfono:<input type="tel" name="telefono" id="telefono"></p>
+                    <p>Código Postal:<input type="text" name="cp" id="cp"></p>
+                    <p>Dirección:<input type="text" name="direccion" id="direccion"></p>
+                    <p>Localidad:<input type="text" name="localidad" id="localidad"></p>
+                    <p>Provincia:<input type="text" name="provincia" id="provincia"></p>
+                </fieldset>
+            </div>
+            <div class="metodos_pago">
+                <fieldset>
+                    <legend class="size_legend">Métodos de pago</legend>
+                    <p class="metodo_pago"><input type="radio" name="metodo_pago" id="tarjeta_credito" value="tarjeta_credito" checked><i class="fa-brands fa-cc-visa blanco empujar"></i>Tarjeta de crédito</p>
+                    <p class="metodo_pago"><input type="radio" name="metodo_pago" id="paypal" value="paypal"><i class="fa-brands fa-cc-paypal blanco empujar"></i>Paypal</p>
+                    <p class="metodo_pago"><input type="radio" name="metodo_pago" id="apple_pay" value="apple_pay"><i class="fa-brands fa-cc-apple-pay blanco empujar"></i>Apple Pay</p>
+                    <p class="metodo_pago"><input type="radio" name="metodo_pago" id="google_pay" value="google_pay"><i class="fa-brands fa-google-pay blanco empujar"></i>Google Pay</p>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="info_footer">
+            <h3 class="contenido_footer">Informacíon</h3>
+            <ul>
+                <li><a href="#" class="blanco">¿Quiénes somos?</a></li>
+                <li><a href="#" class="blanco">Política de privacidad</a></li>
+                <li><a href="#" class="blanco">Política de cookies</a></li>
+                <li><a href="#" class="blanco">Condiciones legales</a></li>
+            </ul>
+        </div>
+        <div class="barra"></div>
+        <div class="info_footer">
+            <h3 class="contenido_footer">Haz tu pedido por teléfono</h3>
+            <h2 class="contenido_footer">625 832 321</h2>
+            <p class="contenido_footer">Horario de lunes a viernes de 8:00 a 21:00</p>
+        </div>
+        <div class="barra"></div>
+        <div class="info_footer">
+            <h3 class="contenido_footer">Síguenos en redes sociales</h3>
+            <div class="redes_sociales">
+                <a href="#"><i class="fa-brands fa-instagram icono_redsocial"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook icono_redsocial"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp icono_redsocial"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube icono_redsocial"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

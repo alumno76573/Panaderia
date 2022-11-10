@@ -27,10 +27,40 @@
                         <a class="EnlaceBarraBusqueda" href="#">Pedidos especiales</a>
                     </li>
                     <li>
-                        <button class="botonEnlaceBarraBusqueda">
-                            <i class="fa-solid fa-basket-shopping carrito"></i>
-                        </button>
-                        <div class="compra"></div>
+                        <button class="botonEnlaceBarraBusqueda" onclick="abrir_compra()"><i class="fa-solid fa-basket-shopping carrito"></i></button>
+                        <div class="compra">
+                            <h3 class="mi_carrito">Mi carrito</h3>
+                            <div class="separador"></div>
+                            <div class="item_carro">
+                                <img src="img/NAPOLITANAS-DE-CHOCOLATE.jpg" alt="napolitanas de chocolate" width="70rem" height="70rem">
+                                <div class="info_item_carro">
+                                    <h5 class="separar">Napolitana chocolate</h5>
+                                    <h5 class="separar">Cantidad 2</h5>
+                                    <h5 class="separar">9,98€</h5>
+                                </div>
+                            </div>
+                            <div class="separador"></div>
+                            <div class="item_carro">
+                                <img src="img/Bollos-prenaos.png" alt="bollos prenaos" width="70rem" height="70rem">
+                                <div class="info_item_carro">
+                                    <h5 class="separar">Bollos preñaos</h5>
+                                    <h5 class="separar">Cantidad 5</h5>
+                                    <h5 class="separar">7,00€</h5>
+                                </div>
+                            </div>
+                            <div class="separador"></div>
+                            <div class="item_carro">
+                                <img src="img/pan-de-centeno.jpg" alt="Pan de centeno" width="70rem" height="70rem">
+                                <div class="info_item_carro">
+                                    <h5 class="separar">Pan de centeno</h5>
+                                    <h5 class="separar">Cantidad 1</h5>
+                                    <h5 class="separar">5,50€</h5>
+                                </div>
+                            </div>
+                            <div class="tramitar_pedido">
+                                <a href="tramitarPedido.html" class="btn_tramitar_pedido">Tramitar Pedido</a>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <a class="EnlaceBarraBusqueda" href="#"><i class="fa-solid fa-user"></i></a>
@@ -45,8 +75,7 @@
             <img class="imagen_producto" src="img/pan-de-trigo-sarraceno.jpg" alt="Imagen de pan de trigo sarraceno" />
             <h2>Pan de trigo serraceno</h2>
             <h4 class="descripcion">
-                Este pan ha sido elaborado con harina de trigo, contiene alrededor de
-                un 58% de hidratos de carbono ademas de proteínas, vitaminas,
+                Este pan ha sido elaborado con harina de trigo, contiene  hidratos de carbono, proteínas, vitaminas,
                 minerales y fibra.
             </h4>
             <h4 class="fotter_tarjeta">
@@ -100,12 +129,30 @@
             </h4>
         </div>
         <div class="producto">
-            <img class="imagen_producto" src="img/pan-de-trigo-sarraceno.jpg" alt="Imagen de pan de trigo sarraceno" />
-            <h2>Pan de trigo serraceno</h2>
+            <img class="imagen_producto" src="img/pan-chino.jpg" alt="Imagen de pan de trigo sarraceno" />
+            <h2>Pan chino casero</h2>
             <h4 class="descripcion">
-                Este pan ha sido elaborado con harina de trigo, contiene alrededor de
-                un 58% de hidratos de carbono ademas de proteínas, vitaminas,
-                minerales y fibra.
+                El pan chino, también conocido como mantou, es un pan hecho al vapor con
+                base de harina de trigo, levadura, agua y azúcar.
+            </h4>
+            <h4 class="fotter_tarjeta">
+                <div class="valoracion">
+                    <i class="fa-solid fa-wheat-awn dorado"></i>
+                    <i class="fa-solid fa-wheat-awn dorado"></i>
+                    <i class="fa-solid fa-wheat-awn dorado"></i>
+                    <i class="fa-solid fa-wheat-awn dorado"></i>
+                    <i class="fa-solid fa-wheat-awn gris"></i>
+                </div>
+                <div class="precio">2,50€</div>
+                <div><button class="boton" type="submit">Añadir</button></div>
+            </h4>
+        </div>
+        <div class="producto">
+            <img class="imagen_producto" src="img/Bollos-prenaos.png" alt="Imagen de pan de trigo sarraceno" />
+            <h2>Bollos preñaos</h2>
+            <h4 class="descripcion">
+                Los bollos preñaos con unos de los tentempiés más deliciosos que podemos encontrar en Asturias. Se trata
+                de un bollo de pan relleno de chorizo.
             </h4>
             <h4 class="fotter_tarjeta">
                 <div class="valoracion">
@@ -115,37 +162,16 @@
                     <i class="fa-solid fa-wheat-awn gris"></i>
                     <i class="fa-solid fa-wheat-awn gris"></i>
                 </div>
-                <div class="precio">4,99€</div>
+                <div class="precio">7,00€</div>
                 <div><button class="boton" type="submit">Añadir</button></div>
             </h4>
         </div>
         <div class="producto">
-            <img class="imagen_producto" src="img/pan-de-trigo-sarraceno.jpg" alt="Imagen de pan de trigo sarraceno" />
-            <h2>Pan de trigo serraceno</h2>
+            <img class="imagen_producto" src="img/NAPOLITANAS-DE-CHOCOLATE.jpg" alt="Imagen de pan de trigo sarraceno" />
+            <h2>Napolitana de chocolate</h2>
             <h4 class="descripcion">
-                Este pan ha sido elaborado con harina de trigo, contiene alrededor de
-                un 58% de hidratos de carbono ademas de proteínas, vitaminas,
-                minerales y fibra.
-            </h4>
-            <h4 class="fotter_tarjeta">
-                <div class="valoracion">
-                    <i class="fa-solid fa-wheat-awn dorado"></i>
-                    <i class="fa-solid fa-wheat-awn dorado"></i>
-                    <i class="fa-solid fa-wheat-awn dorado"></i>
-                    <i class="fa-solid fa-wheat-awn gris"></i>
-                    <i class="fa-solid fa-wheat-awn gris"></i>
-                </div>
-                <div class="precio">4,99€</div>
-                <div><button class="boton" type="submit">Añadir</button></div>
-            </h4>
-        </div>
-        <div class="producto">
-            <img class="imagen_producto" src="img/pan-de-trigo-sarraceno.jpg" alt="Imagen de pan de trigo sarraceno" />
-            <h2>Pan de trigo serraceno</h2>
-            <h4 class="descripcion">
-                Este pan ha sido elaborado con harina de trigo, contiene alrededor de
-                un 58% de hidratos de carbono ademas de proteínas, vitaminas,
-                minerales y fibra.
+                Bollo de origen italiano relleno de chocolate, con una capa de hojaldre que la cubre,
+                un huevo batido, almibar y unas virutas de chocolate por encima
             </h4>
             <h4 class="fotter_tarjeta">
                 <div class="valoracion">
@@ -489,6 +515,12 @@
             </div>
         </div>
     </footer>
+    <script>
+        const abrir_compra = () => {
+        const panel = document.querySelectorAll('.compra')[0].style;
+        panel.display = panel.display === 'none' ? 'block' : 'none';
+        }
+    </script>
 </body>
 
 </html>

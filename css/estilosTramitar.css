@@ -1,0 +1,53 @@
+.container{
+    padding: 10rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #6e5a4c;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item_carro{
+    width: 40%;
+    border: solid 1px rgb(194, 193, 193);
+    padding: 1rem;
+    background-color: white;
+}
+.separar{
+    font-size: x-large;
+}
+.descripcion{
+    width: 90%;
+    margin: 0.5rem 0 0 0.5rem;
+}
+#cantidad{
+    width: 25%;
+}
+.facturacion{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    color: white;
+}
+.size_legend{
+    font-size: x-large;
+}
+.metodos_pago{
+    color: white;
+    padding-top: 2rem;
+}
+fieldset{
+    border: 3px solid white;
+}
+.empujar{
+    margin: 0 0.5rem 0 1rem;
+}
+.metodo_pago{
+    font-size: xx-large;
+}
+form{
+    width: 30%;
+}

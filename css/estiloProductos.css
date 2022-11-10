@@ -18,6 +18,9 @@ nav{
 ul li{
     display: inline;
 }
+.mi_carrito{
+    margin-left: 1rem;
+}
 .EnlaceBarraBusqueda{
     text-decoration: none;
     color: white;
@@ -49,18 +52,6 @@ ul li{
     align-items: center;
     padding: 2rem;
 }
-.compra{
-    display: none;
-    background-color: white;
-    right: 0;
-    position: fixed;
-    width: 300px;
-    height: 500px;
-    margin-top: 4rem;
-}
-.botonEnlaceBarraBusqueda:focus + .compra{
-    display: block;
-}
 .container{
     background-color: #CAA58B;
     padding-top: 12rem;
@@ -69,8 +60,8 @@ ul li{
     flex-wrap: wrap;
 }
 .imagen_producto{
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
 }
 .producto{
     background-color: #40342C;
@@ -93,6 +84,7 @@ ul li{
 .descripcion{
     display: flex;
     text-align: center;
+    margin: 0 0.5rem 0 0.5rem;
 }
 .dorado{
     color: #fdc500;

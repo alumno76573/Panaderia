@@ -26,7 +26,42 @@
                     <li><a class="EnlaceBarraBusqueda" href="#">Inicio</a></li>
                     <li><a class="EnlaceBarraBusqueda" href="productos.html">Productos</a></li>
                     <li><a class="EnlaceBarraBusqueda" href="#">Pedidos especiales</a></li>
-                    <li><button class="botonEnlaceBarraBusqueda"><i class="fa-solid fa-basket-shopping carrito"></i></button><div class="compra"></div></li>
+                    <li>
+                        <button class="botonEnlaceBarraBusqueda" onclick="abrir_compra()"><i class="fa-solid fa-basket-shopping carrito"></i></button>
+                        <div class="compra">
+                            <h3>Mi carrito</h3>
+                            <div class="separador"></div>
+                            <div class="item_carro">
+                                <img src="img/NAPOLITANAS-DE-CHOCOLATE.jpg" alt="napolitanas de chocolate" width="70rem" height="70rem">
+                                <div class="info_item_carro">
+                                    <h5 class="separar">Napolitana chocolate</h5>
+                                    <h5 class="separar">Cantidad 2</h5>
+                                    <h5 class="separar">9,98€</h5>
+                                </div>
+                            </div>
+                            <div class="separador"></div>
+                            <div class="item_carro">
+                                <img src="img/Bollos-prenaos.png" alt="bollos prenaos" width="70rem" height="70rem">
+                                <div class="info_item_carro">
+                                    <h5 class="separar">Bollos preñaos</h5>
+                                    <h5 class="separar">Cantidad 5</h5>
+                                    <h5 class="separar">7,00€</h5>
+                                </div>
+                            </div>
+                            <div class="separador"></div>
+                            <div class="item_carro">
+                                <img src="img/pan-de-centeno.jpg" alt="Pan de centeno" width="70rem" height="70rem">
+                                <div class="info_item_carro">
+                                    <h5 class="separar">Pan de centeno</h5>
+                                    <h5 class="separar">Cantidad 1</h5>
+                                    <h5 class="separar">5,50€</h5>
+                                </div>
+                            </div>
+                            <div class="tramitar_pedido">
+                                <a href="tramitarPedido.html" class="btn_tramitar_pedido">Tramitar Pedido</a>
+                            </div>
+                        </div>
+                    </li>
                     <li><a class="EnlaceBarraBusqueda" href="#"><i class="fa-solid fa-user"></i></a></li>
                 </ul>
             </div>
@@ -182,6 +217,10 @@
                     enlaces[i].classList.remove('blanco')
                 }
             }
+        }
+        const abrir_compra = () => {
+        const panel = document.querySelectorAll('.compra')[0].style;
+        panel.display = panel.display === 'none' ? 'block' : 'none';
         }
     </script>
 </body>
