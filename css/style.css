@@ -1,7 +1,7 @@
 #container{
     display: flex;
     flex-direction: column;
-    background-image: url(/Panaderia/img/panesFondo.jpg);
+    background-image: url(../img/panesFondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
