@@ -18,6 +18,7 @@ nav{
     display: flex;
     flex-direction: row;
     width: 100vw;
+    height: 7.7rem;
     justify-content: space-between;
     background-color: #CAA58B;
 }
@@ -29,7 +30,7 @@ ul li{
     color: black;
     padding: 20px;
     font-size: x-large;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
 }
 .EnlaceBarraBusqueda:hover{
     font-size: 2rem;
@@ -61,43 +62,10 @@ ul li{
     position: fixed;
     width: 300px;
     height: 500px;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
-.separador{
-    border: solid 1px rgb(221, 220, 220);
-    width: 100%;
-}
-.item_carro{
-    display: flex;
-    margin: 1rem 0 1rem 1rem;
-}
-.separar{
-    margin:0.5rem 0 0 0.5rem;
-}
-.info_item_carro{
-    display: flex;
-    flex-direction: column;
-}
-.tramitar_pedido{
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-}
-.btn_tramitar_pedido{
-    background-color: #CAA58B;
-    border: solid 1px black;
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    color: black;
-    cursor: pointer;
-    padding: 0.5rem;
-    text-decoration: none;
-    transition: 0.2s;
-}
-.btn_tramitar_pedido:hover{
-    background-color: #40342C;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    color: white;
+.botonEnlaceBarraBusqueda:focus + .compra{
+    display: block;
 }
 footer{
     display: flex;

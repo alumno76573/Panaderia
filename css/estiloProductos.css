@@ -99,8 +99,10 @@ ul li{
     border-color: #40342C;
     cursor: pointer;
     transition: 0.2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .boton:hover{
     background-color: white;
     color: #8C5A37;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
